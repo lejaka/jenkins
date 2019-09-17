@@ -4,6 +4,7 @@ import java.io.IOException;
 
 public class files {
     public void Getfiles(){
+        //get file from desktop
         File myObj = new File(".../Desktop/New folder/filename.txt");
         String commmand = " shutdown -i";
 //        if(myObj.exists()){
