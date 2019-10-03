@@ -24,13 +24,13 @@ def ageCalc(yearBorn){
   return age;
 }
 
-def String[] arg = ["Groovy","Java","Python","nodeJS"]
+def String[] arg = ["Groovy","Java","Python","nodeJS"];
 for( a in arg){
   println a
 }
 
 def checkOs(){
-  if(isUnix()){
+  if(!isUnix()){
     println("Unix detected");
   }
   else {
