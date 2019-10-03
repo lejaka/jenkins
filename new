@@ -1,0 +1,7 @@
+#!/usr/bin/env groovy
+//def x = 0;
+def y = "Hello World";
+def z = y.length();
+for(x in 0..z-1){
+          println(y[x..z-1])
+	}
