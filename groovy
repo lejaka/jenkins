@@ -29,15 +29,24 @@ for( a in arg){
   println a
 }
 
-def checkOs(){
-  if(!isUnix()){
-    println("Unix detected");
+def getOs(){
+  def osName;
+  def os = System.properties['os.name'].toLowerCase();
+  if(os.contains("windows")){
+	osName = "windows";
   }
-  else {
-    println("Windows detected");
+  else if(os.contains("linux")){
+	osName = "linux";
   }
+  else if(os.contains("mac os")){
+	osName = "mac os";
+  }
+  else{
+    println("Anything");
+  }
+  return osName;
 }
 
 stringFunction();
 ageCalc(1991);
-checkOs();
+getOs();
